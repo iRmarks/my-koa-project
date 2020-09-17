@@ -8,6 +8,7 @@
  */
 module.exports = {
   mongoURI:
-    // "mongodb+srv://root:root123@mycluster.arbsi.mongodb.net/sample_mflix?retryWrites=true&w=majority",
+    // "mongodb+srv://root:root123@mycluster.arbsi.mongodb.net/koaapp?retryWrites=true&w=majority",
     "mongodb://localhost/koaapp",
+  secretOrKey: "secret",
 };
