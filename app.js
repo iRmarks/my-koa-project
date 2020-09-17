@@ -1,14 +1,17 @@
 // 引入
 const Koa = require("koa");
 const Router = require("koa-router");
-const path = require("path");
 const Mongoose = require("mongoose");
+const bodyParser = require("koa-bodyparser");
 
 // config
 const db = require("./config/keys").mongoURI;
+
 // 实例化
 const app = new Koa();
 const router = new Router();
+
+app.use(bodyParser());
 
 // 引入users.js
 const users = require("./routes/api/users");
